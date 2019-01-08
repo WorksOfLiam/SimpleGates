@@ -60,7 +60,7 @@ public class Gate {
 		int fenceCount = 0;
 		while (true) {
 			switch (loc.getBlock().getType()) {
-			case IRON_FENCE:
+			case IRON_BARS:
 				loc.setY(loc.getY() + 1);
 				fenceCount++;
 				
@@ -107,7 +107,7 @@ public class Gate {
 			drillBlock = drillLocation.getBlock();
 			
 			if (drillBlock.getType().equals(Material.AIR)) {
-				drillBlock.setType(Material.IRON_FENCE);
+				drillBlock.setType(Material.IRON_BARS);
 				GateY++;
 			}
 			

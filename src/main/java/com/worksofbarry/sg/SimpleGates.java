@@ -24,7 +24,7 @@ public class SimpleGates extends JavaPlugin {
         
         NamespacedKey key = new NamespacedKey(this, getDescription().getName());
         ShapedRecipe disk = new ShapedRecipe(key, Gate.GetGateBlock());
-        disk.shape(new String[]{"*A*","*B*","*C*"}).setIngredient('A', Material.REDSTONE).setIngredient('B', Material.STONE).setIngredient('C', Material.IRON_FENCE); 
+        disk.shape(new String[]{"*A*","*B*","*C*"}).setIngredient('A', Material.REDSTONE).setIngredient('B', Material.STONE).setIngredient('C', Material.IRON_BARS); 
         Bukkit.getServer().addRecipe(disk);
         
 		if (!new File(getDataFolder(), "config.yml").exists())
