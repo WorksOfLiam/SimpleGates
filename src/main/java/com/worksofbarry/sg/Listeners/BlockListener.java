@@ -41,7 +41,7 @@ public class BlockListener implements Listener {
     		}
     		break;
     		
-    	case GRASS:
+    	case IRON_BARS:
     		if (Gate.isGatePart(block.getLocation())) {
     			event.setCancelled(true);
     		}
